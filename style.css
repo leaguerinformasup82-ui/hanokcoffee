@@ -850,7 +850,118 @@ section { padding: var(--sp-6) 0; }
 }
 .carousel-dot.active { background: var(--c-hot); transform: scale(1.45); }
 
-/* ── 13. Contact ─────────────────────────────────────────────────*/
+/* ── 13. Reviews ─────────────────────────────────────────────────*/
+#reviews { background: var(--c-bg); }
+
+.reviews-aggregate {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  justify-content: center;
+  margin-top: var(--sp-3);
+  flex-wrap: wrap;
+}
+.agg-stars { color: #F5A623; font-size: 1.5rem; letter-spacing: 2px; line-height: 1; }
+.agg-score { font-size: 2rem; font-weight: 700; color: var(--c-text); line-height: 1; }
+.agg-count { font-size: .9rem; color: var(--c-text-2); }
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-3);
+  margin-top: var(--sp-5);
+}
+@media (min-width: 600px) {
+  .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 900px) {
+  .reviews-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.review-card {
+  background: var(--c-bg-card);
+  border: 1.5px solid var(--c-border);
+  border-radius: var(--r-lg);
+  padding: var(--sp-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  box-shadow: var(--sh-sm);
+  transition: box-shadow var(--dur), transform var(--dur);
+}
+.review-card:hover {
+  box-shadow: var(--sh-md);
+  transform: translateY(-3px);
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+}
+.review-avatar {
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  border-radius: var(--r-full);
+  background: var(--av-bg, var(--c-accent));
+  color: #fff;
+  font-size: .78rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: .5px;
+}
+.review-meta {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: .1rem;
+}
+.review-name {
+  font-size: .9rem;
+  color: var(--c-text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.review-date {
+  font-size: .75rem;
+  color: var(--c-text-3);
+}
+
+.review-source {
+  font-size: .65rem;
+  font-weight: 700;
+  padding: .2rem .55rem;
+  border-radius: var(--r-full);
+  white-space: nowrap;
+  flex-shrink: 0;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+.review-source--google { background: #E8F0FE; color: #1A73E8; }
+.review-source--trip   { background: #E6F4EA; color: #2D7A4F; }
+
+.review-stars {
+  color: #F5A623;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+.review-stars .star-empty { color: var(--c-border); }
+
+.review-text {
+  font-size: .88rem;
+  color: var(--c-text-2);
+  line-height: 1.65;
+  font-style: italic;
+  flex: 1;
+}
+
+/* ── 14. Contact ─────────────────────────────────────────────────*/
 #contact { background: var(--c-bg-card); }
 
 /* Live search */
