@@ -423,7 +423,7 @@ section { padding: var(--sp-6) 0; }
 }
 .btn:active { transform: scale(.96); }
 
-.btn-primary { background: var(--c-hot); color: var(--c-white); }
+.btn-primary { background: var(--c-hot); color: var(--c-bg-dark); }
 .btn-primary:hover {
   background: #e8541e;
   box-shadow: 0 6px 24px rgba(255,107,53,.38);
@@ -1183,7 +1183,7 @@ footer {
 .footer-logo em { font-style: normal; color: var(--c-hot); }
 .footer-tagline {
   font-size: .8rem;
-  color: rgba(253,252,249,.36);
+  color: rgba(253,252,249,.62);
   max-width: 220px;
   line-height: 1.65;
   margin-top: .25rem;
@@ -1194,13 +1194,13 @@ footer {
   font-weight: 700;
   letter-spacing: .13em;
   text-transform: uppercase;
-  color: rgba(253,252,249,.38);
+  color: rgba(253,252,249,.62);
   margin-bottom: var(--sp-2);
 }
 .footer-col ul { display: flex; flex-direction: column; gap: var(--sp-1); }
 .footer-col a {
   font-size: .84rem;
-  color: rgba(253,252,249,.56);
+  color: rgba(253,252,249,.75);
   text-decoration: none;
   transition: color var(--dur);
 }
@@ -1216,15 +1216,15 @@ footer {
 @media (min-width: 580px) {
   .footer-bottom { flex-direction: row; justify-content: space-between; align-items: center; }
 }
-.footer-copy { font-size: .74rem; color: rgba(253,252,249,.24); }
+.footer-copy { font-size: .74rem; color: rgba(253,252,249,.62); }
 .footer-legal { display: flex; gap: var(--sp-3); flex-wrap: wrap; }
 .footer-legal a {
   font-size: .74rem;
-  color: rgba(253,252,249,.3);
+  color: rgba(253,252,249,.62);
   text-decoration: none;
   transition: color var(--dur);
 }
-.footer-legal a:hover { color: rgba(253,252,249,.8); }
+.footer-legal a:hover { color: var(--c-white); }
 
 /* ── 15. Fox mascot ──────────────────────────────────────────────*/
 #fox-wrapper {
