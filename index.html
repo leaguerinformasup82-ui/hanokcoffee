@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2B1F14">
+
+  <!-- SEO -->
+  <title>한옥 커피 — Hanok Coffee, café coréen de spécialité à Paris (Marais)</title>
+  <meta name="description" content="Hanok Coffee, café coréen de spécialité au cœur du Marais (Paris 4e). Café dalgona, latte matcha, latte sésame noir, limonade yuzu. Réservation en ligne.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.hanokcoffee.fr/">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:site_name"   content="Hanok Coffee">
+  <meta property="og:title"       content="한옥 커피 — Hanok Coffee Paris">
+  <meta property="og:description" content="Café coréen de spécialité au cœur du Marais. Café dalgona, matcha, yuzu et bien plus.">
+  <meta property="og:url"         content="https://www.hanokcoffee.fr/">
+  <meta property="og:image"       content="https://www.hanokcoffee.fr/images/og.jpg">
+  <meta property="og:locale"      content="fr_FR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Hanok Coffee Paris">
+  <meta name="twitter:description" content="Café coréen de spécialité au Marais — café dalgona, matcha, yuzu.">
+  <meta name="twitter:image"       content="https://www.hanokcoffee.fr/images/og.jpg">
+
+  <!-- Schema.org: LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "Hanok Coffee",
+    "alternateName": "한옥 커피",
+    "description": "Café coréen de spécialité au cœur du Marais, Paris. Boissons inspirées de la culture coréenne dans un cadre chaleureux et authentique.",
+    "url": "https://www.hanokcoffee.fr",
+    "telephone": "+33140000000",
+    "email": "bonjour@hanokcoffee.fr",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "12 rue des Rosiers",
+      "addressLocality": "Paris",
+      "addressRegion": "Île-de-France",
+      "postalCode": "75004",
+      "addressCountry": "FR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 48.8552,
+      "longitude": 2.3530
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "19:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "20:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday",   "opens": "10:00", "closes": "18:00" }
+    ],
+    "servesCuisine": ["Korean","Specialty Coffee"],
+    "priceRange": "€€",
+    "inLanguage": ["fr","ko"],
+    "image": "https://www.hanokcoffee.fr/images/og.jpg",
+    "sameAs": [
+      "https://www.instagram.com/hanokcoffee",
+      "https://www.facebook.com/hanokcoffee"
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700;900&family=Inter:wght@400;500;600;700&display=swap">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Skip navigation (WCAG) -->
+  <a class="skip-nav" href="#main-content">Passer au contenu principal</a>
+
+  <!-- ── Header ──────────────────────────────────────────────── -->
+  <header id="site-header" role="banner">
+    <div class="container nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Hanok Coffee — retour en haut de page">
+        한옥<em> 커피</em>
+      </a>
+
+      <nav aria-label="Navigation principale">
+        <ul class="nav-links" role="list">
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Galerie</a></li>
+          <li><a href="#events">Événements</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" class="nav-cta">Réserver</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-burger"
+              aria-label="Ouvrir le menu de navigation"
+              aria-expanded="false"
+              aria-controls="nav-mobile">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile nav overlay -->
+  <nav id="nav-mobile" aria-label="Navigation mobile" aria-hidden="true">
+    <button id="nav-mobile-close" aria-label="Fermer le menu">✕</button>
+    <a href="#about">À propos</a>
+    <a href="#menu">Menu</a>
+    <a href="#gallery">Galerie</a>
+    <a href="#events">Événements</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="btn btn-primary" style="pointer-events:auto;">Réserver</a>
+  </nav>
+
+  <main id="main-content" tabindex="-1">
+
+    <!-- ── Hero ─────────────────────────────────────────────── -->
+    <section id="hero" aria-labelledby="hero-title">
+      <!-- Parallax background layer (JS adds translateY on scroll) -->
+      <div class="hero-bg" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <p class="hero-eyebrow" aria-hidden="true">Paris · Marais · 한국 커피</p>
+
+        <h1 class="hero-h1" id="hero-title" lang="ko">
+          한옥 커피
+          <span lang="fr">Hanok Coffee Paris</span>
+        </h1>
+
+        <p class="hero-desc">
+          Un espace calme et chaleureux où la tradition coréenne rencontre<br>
+          le café de spécialité, au cœur du Marais.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Réserver une table</a>
+          <a href="#menu"    class="btn btn-ghost">Voir le menu</a>
+        </div>
+      </div>
+
+      <div class="hero-scroll" aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+        Découvrir
+      </div>
+    </section>
+
+    <!-- ── About ─────────────────────────────────────────────── -->
+    <section id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about-grid">
+
+          <figure class="about-visual" role="img" aria-label="Intérieur chaleureux de Hanok Coffee, mobilier en bois coréen traditionnel" data-reveal>
+            ☕
+            <div class="about-badge">
+              <strong>2024</strong>
+              Paris Marais
+            </div>
+          </figure>
+
+          <div class="about-text" data-reveal>
+            <div class="section-header" style="margin-bottom:1.5rem;">
+              <p class="section-tag">우리 이야기 · Notre histoire</p>
+              <h2 id="about-title">Un café né entre deux cultures</h2>
+            </div>
+
+            <div class="bilingual">
+              <span class="txt-ko" lang="ko">한옥 커피는 한국의 전통 건축 양식인 한옥에서 영감을 받아 탄생했습니다.</span>
+              <span class="txt-fr">Hanok Coffee s'inspire de l'architecture traditionnelle coréenne, le hanok — espaces épurés, bois naturel, lumière douce.</span>
+            </div>
+
+            <div class="bilingual">
+              <span class="txt-ko" lang="ko">조용하고 따뜻한 공간에서 정성껏 내린 커피 한 잔을 즐기세요.</span>
+              <span class="txt-fr">Dans cet espace calme et chaleureux, savourez une tasse de café préparée avec soin et amour.</span>
+            </div>
+
+            <div class="divider" aria-hidden="true"></div>
+
+            <div class="bilingual">
+              <span class="txt-ko" lang="ko">저희는 한국에서 직접 공수한 재료와 파리의 스페셜티 커피를 결합하여 독특한 메뉴를 선보입니다.</span>
+              <span class="txt-fr">Nous combinons des ingrédients importés directement de Corée avec le meilleur café de spécialité parisien pour vous proposer une carte unique et sincère.</span>
+            </div>
+
+            <div style="margin-top:1.5rem;">
+              <a href="#menu" class="btn btn-outline">Explorer le menu</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Menu ──────────────────────────────────────────────── -->
+    <section id="menu" aria-labelledby="menu-title">
+      <div class="container">
+
+        <div class="section-header" data-reveal>
+          <p class="section-tag">메뉴 · Ce que nous servons</p>
+          <h2 id="menu-title" lang="ko">메뉴</h2>
+          <p class="subline">Boissons et snacks inspirés de la cuisine coréenne</p>
+        </div>
+
+        <!-- Filter tabs + count -->
+        <div class="menu-controls" role="group" aria-label="Filtres du menu">
+          <div class="menu-tabs" role="tablist" aria-label="Catégories">
+            <button class="filter-tab" role="tab" aria-selected="true"  data-filter="all"       id="tab-all">Tout</button>
+            <button class="filter-tab" role="tab" aria-selected="false" data-filter="coffee"    id="tab-coffee">Café</button>
+            <button class="filter-tab" role="tab" aria-selected="false" data-filter="tea"       id="tab-tea">Thé</button>
+            <button class="filter-tab" role="tab" aria-selected="false" data-filter="cold"      id="tab-cold">Froid</button>
+            <button class="filter-tab" role="tab" aria-selected="false" data-filter="food"      id="tab-food">Snacks</button>
+            <button class="filter-tab" role="tab" aria-selected="false" data-filter="signature" id="tab-sig">Signature</button>
+          </div>
+        </div>
+
+        <!-- Live count for screen readers -->
+        <p id="menu-live" role="status" aria-live="polite" aria-atomic="true" class="sr-only"></p>
+
+        <div id="menu-grid" class="menu-grid" role="list" aria-label="Articles du menu">
+
+          <!-- 1 -->
+          <article class="menu-card" role="listitem"
+            data-category="coffee"
+            data-tags="signature"
+            data-name-ko="달고나 커피"
+            data-name-fr="Café Dalgona"
+            data-desc="Mousse de café fouettée sur lait froid ou chaud"
+            data-price="5.50"
+            data-reveal>
+            <div class="menu-card-top">
+              <div>
+                <span class="menu-name-ko" lang="ko">달고나 커피</span>
+                <span class="menu-name-fr">Café Dalgona</span>
+              </div>
+              <span class="menu-price" aria-label="5 euros 50">5,50 €</span>
+            </div>
+            <p class="menu-desc">Mousse de café fouettée sur lait froid ou chaud — la recette coréenne iconique.</p>
+            <div class="menu-badges">
+              <span class="badge sig">Signature</span>
+            </div>
+          </article>
+
+          <!-- 2 -->
+          <article class="menu-card" role="listitem"
+            data-category="coffee"
+            data-tags="signature"
+            data-name-ko="흑임자 라떼"
+            data-name-fr="Latte Sésame Noir"
+            data-desc="Pâte de sésame noir, lait entier, espresso double"
+            data-price="6.00"
+            data-reveal>
+            <div class="menu-card-top">
+              <div>
+                <span class="menu-name-ko" lang="ko">흑임자 라떼</span>
+                <span class="menu-name-fr">Latte Sésame Noir</span>
+              </div>
+              <span class="menu-price" aria-label="6 euros">6,00 €</span>
+            </div>
+            <p class="menu-desc">Pâte de sésame noir torréfié, lait entier vaporisé, espresso double origine.</p>
+            <div class="menu-badges">
+              <span class="badge sig">Signature</span>
+              <span class="badge new">Nouveau</span>
+            </div>
+          </article>
+
+          <!-- 3 -->
+          <article class="menu-card" role="listitem"
+            data-category="coffee"
+            data-tags=""
+            data-name-ko="아메리카노"
+            data-name-fr="Americano"
+            data-desc="Espresso double, Éthiopie-Guatemala, allongé à l'eau chaude"
+            data-price="3.50"
+            data-reveal>
+            <div class="menu-card-top">
+              <div>
+                <span class="menu-name-ko" lang="ko">아메리카노</span>
+                <span class="menu-name-fr">Americano</span>
+              </div>
+              <span class="menu-price" aria-label="3 euros 50">3,50 €</span>
+            </div>
+            <p class="menu-desc">Espresso double origine Éthiopie-Guatemala, notes de fruits rouges et chocolat.</p>
+            <div class="menu-badges"></div>
+          </article>
+
+          <!-- 4 -->
+          <article class="menu-card" role="listitem"
+            data-category="tea"
+            data-tags="vegan"
+            data-name-ko="말차 라떼"
+            data-name-fr="Latte Matcha"
+            data-desc="Matcha de cérémonie, lait d'avoine, mousse légère"
+            data-price="5.50"
+            data-reveal>
+            <div class="menu-card-top">
+              <div>
+                <span class="menu-name-ko" lang="ko">말차 라떼</span>
+                <span class="menu-name-fr">Latte Matcha</span>
+              </div>
+              <span class="menu-price" aria-label="5 euros 50">5,50 €</span>
+            </div>
+            <p class="menu-desc">Matcha de cérémonie grade supérieur, lait d'avoine, fine mousse veloutée.</p>
+            <div class="menu-badges">
+              <span class="badge veg">Vegan</span>
+            </div>
+          </article>
+
+          <!-- 5 -->
+          <article class="menu-card" role="listitem"
+            data-category="tea"
+            data-tags="vegan"
+            data-name-ko="호지차 라떼"
+            data-name-fr="Latte Hojicha"
+            data-desc="Thé vert torréfié japonais, notes fumées, lait de coco"
+            data-price="5.00"
+            data-reveal>
+            <div class="menu-card-top">
+              <div>
+                <span class="menu-name-ko" lang="ko">호지차 라떼</span>
+                <span class="menu-name-fr">Latte Hojicha</span>
+              </div>
+              <span class="menu-price" aria-label="5 euros">5,00 €</span>
+            </div>
+            <p class="menu-desc">Thé vert torréfié aux notes fumées et caramel, lait de coco maison.</p>
+            <div class="menu-badges">
+              <span class="badge veg">Vegan</span>
+            </div>
+          </article>
+
+          <!-- 6 -->
+          <article class="menu-card" role="listitem"
+            data-category="cold"
+            data-tags="cold"
+            data-name-ko="유자 에이드"
+            data-name-fr="Limonade Yuzu"
+            data-desc="Yuzu frais, sirop maison, eau pétillante, feuille de menthe"
+            data-price="5.00"
+            data-reveal>
+            <div class="menu-card-top">
+              <div>
+                <span class="menu-name-ko" lang="ko">유자 에이드</span>
+                <span class="menu-name-fr">Limonade Yuzu</span>
+              </div>
+              <span class="menu-price" aria-label="5 euros">5,00 €</span>
+            </div>
+            <p class="menu-desc">Yuzu frais pressé, sirop maison, eau pétillante. Sans caféine.</p>
+            <div class="menu-badges">
+              <span class="badge cold">Sans caféine</span>
+            </div>
+          </article>
+
+          <!-- 7 -->
+          <article class="menu-card" role="listitem"
+            data-category="cold"
+            data-tags="signature,cold"
+            data-name-ko="아이스 달고나"
+            data-name-fr="Dalgona Glacé"
+            data-desc="Version froide du dalgona sur lait glacé et glaçons"
+            data-price="6.00"
+            data-reveal>
+            <div class="menu-card-top">
+              <div>
+                <span class="menu-name-ko" lang="ko">아이스 달고나</span>
+                <span class="menu-name-fr">Dalgona Glacé</span>
+              </div>
+              <span class="menu-price" aria-label="6 euros">6,00 €</span>
+            </div>
+            <p class="menu-desc">Mousse dalgona sur lait entier glacé, glaçons en cristal, poudre de café.</p>
+            <div class="menu-badges">
+              <span class="badge sig">Signature</span>
+              <span class="badge cold">Glacé</span>
+            </div>
+          </article>
+
+          <!-- 8 -->
+          <article class="menu-card" role="listitem"
+            data-category="food"
+            data-tags="vegan,traditional"
+            data-name-ko="약과"
+            data-name-fr="Yakgwa"
+            data-desc="Biscuit coréen traditionnel au miel et au gingembre"
+            data-price="3.00"
+            data-reveal>
+            <div class="menu-card-top">
+              <div>
+                <span class="menu-name-ko" lang="ko">약과</span>
+                <span class="menu-name-fr">Yakgwa</span>
+              </div>
+              <span class="menu-price" aria-label="3 euros">3,00 €</span>
+            </div>
+            <p class="menu-desc">Biscuit coréen traditionnel à base de miel, sésame et gingembre. Vegan.</p>
+            <div class="menu-badges">
+              <span class="badge veg">Vegan</span>
+              <span class="badge trad">Traditionnel</span>
+            </div>
+          </article>
+
+          <!-- 9 -->
+          <article class="menu-card" role="listitem"
+            data-category="food"
+            data-tags=""
+            data-name-ko="팥빙수 (미니)"
+            data-name-fr="Mini Patbingsu"
+            data-desc="Glace pilée coréenne, haricots rouges, mochi, sirop de lait condensé"
+            data-price="6.50"
+            data-reveal>
+            <div class="menu-card-top">
+              <div>
+                <span class="menu-name-ko" lang="ko">팥빙수 (미니)</span>
+                <span class="menu-name-fr">Mini Patbingsu</span>
+              </div>
+              <span class="menu-price" aria-label="6 euros 50">6,50 €</span>
+            </div>
+            <p class="menu-desc">Glace pilée, purée de haricots rouges maison, mochi, sirop de lait condensé.</p>
+            <div class="menu-badges">
+              <span class="badge trad">Traditionnel</span>
+            </div>
+          </article>
+
+        </div><!-- /menu-grid -->
+
+        <p id="menu-empty" hidden aria-live="assertive" style="text-align:center;padding:3rem 0;color:var(--c-text-3);">
+          Aucun article ne correspond à ce filtre.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- ── Gallery ───────────────────────────────────────────── -->
+    <section id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+
+        <div class="section-header" data-reveal>
+          <p class="section-tag">갤러리 · Galerie</p>
+          <h2 id="gallery-title">L'atmosphère Hanok</h2>
+          <p class="subline" style="color:rgba(253,252,249,.48);">L'espace, les boissons, les détails qui font l'ambiance</p>
+        </div>
+
+        <!-- Masonry CSS — swap divs for real <img loading="lazy" decoding="async"> -->
+        <div class="gallery-grid" role="list" aria-label="Galerie photos de Hanok Coffee">
+
+          <figure class="gallery-item" role="listitem" data-reveal
+                  aria-label="Café dalgona signature — mousse dorée sur lait froid"
+                  data-caption="Café dalgona signature — mousse dorée sur lait froid">
+            <div class="gallery-thumb p1" aria-hidden="true">☕</div>
+            <figcaption class="sr-only">Café dalgona signature — mousse dorée sur lait froid</figcaption>
+          </figure>
+
+          <figure class="gallery-item" role="listitem" data-reveal
+                  aria-label="Comptoir en bois massif, inspiré du mobilier hanok"
+                  data-caption="Comptoir en bois massif, inspiré du mobilier hanok">
+            <div class="gallery-thumb p2" aria-hidden="true">🏮</div>
+            <figcaption class="sr-only">Comptoir en bois massif, inspiré du mobilier hanok</figcaption>
+          </figure>
+
+          <figure class="gallery-item" role="listitem" data-reveal
+                  aria-label="Latte matcha, lait d'avoine, mousse légère"
+                  data-caption="Latte matcha, lait d'avoine, mousse légère">
+            <div class="gallery-thumb p3" aria-hidden="true">🍵</div>
+            <figcaption class="sr-only">Latte matcha, lait d'avoine, mousse légère</figcaption>
+          </figure>
+
+          <figure class="gallery-item" role="listitem" data-reveal
+                  aria-label="Yakgwa — biscuits traditionnels coréens au miel"
+                  data-caption="Yakgwa — biscuits traditionnels coréens au miel">
+            <div class="gallery-thumb p4" aria-hidden="true">🍯</div>
+            <figcaption class="sr-only">Yakgwa — biscuits traditionnels coréens au miel</figcaption>
+          </figure>
+
+          <figure class="gallery-item" role="listitem" data-reveal
+                  aria-label="Vue intérieure — lumière naturelle et bois chaud"
+                  data-caption="Vue intérieure — lumière naturelle et bois chaud">
+            <div class="gallery-thumb p5" aria-hidden="true">🪔</div>
+            <figcaption class="sr-only">Vue intérieure — lumière naturelle et bois chaud</figcaption>
+          </figure>
+
+          <figure class="gallery-item" role="listitem" data-reveal
+                  aria-label="Limonade yuzu — fraîcheur acidulée de Corée"
+                  data-caption="Limonade yuzu — fraîcheur acidulée de Corée">
+            <div class="gallery-thumb p6" aria-hidden="true">🍋</div>
+            <figcaption class="sr-only">Limonade yuzu — fraîcheur acidulée de Corée</figcaption>
+          </figure>
+
+          <figure class="gallery-item" role="listitem" data-reveal
+                  aria-label="Mini patbingsu — glace pilée et haricots rouges"
+                  data-caption="Mini patbingsu — glace pilée et haricots rouges">
+            <div class="gallery-thumb p7" aria-hidden="true">❄️</div>
+            <figcaption class="sr-only">Mini patbingsu — glace pilée et haricots rouges</figcaption>
+          </figure>
+
+          <figure class="gallery-item" role="listitem" data-reveal
+                  aria-label="12 rue des Rosiers, au cœur du Marais parisien"
+                  data-caption="12 rue des Rosiers, au cœur du Marais parisien">
+            <div class="gallery-thumb p8" aria-hidden="true">🗺️</div>
+            <figcaption class="sr-only">12 rue des Rosiers, au cœur du Marais parisien</figcaption>
+          </figure>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Lightbox dialog -->
+    <dialog id="lightbox" aria-label="Visionneuse de photo" aria-modal="true">
+      <button class="lb-close" id="lb-close" aria-label="Fermer la photo">✕</button>
+      <div class="lb-img-wrap">
+        <div class="lb-img-ph" id="lb-ph"></div>
+      </div>
+      <p class="lb-caption" id="lb-caption"></p>
+    </dialog>
+
+    <!-- ── Events ────────────────────────────────────────────── -->
+    <section id="events" aria-labelledby="events-title">
+      <div class="container">
+
+        <div class="section-header" data-reveal>
+          <p class="section-tag">이벤트 · Événements</p>
+          <h2 id="events-title">Agenda &amp; Ateliers</h2>
+          <p class="subline">Ateliers, soirées culturelles et lancements de saison</p>
+        </div>
+
+        <div class="carousel" role="region" aria-label="Carousel des événements" aria-roledescription="carousel" data-reveal>
+
+          <div class="carousel-track-wrap">
+            <div class="carousel-track" id="carousel-track" aria-live="off">
+
+              <!-- Slide 1 -->
+              <article class="carousel-slide"
+                       role="group" aria-roledescription="diapositive"
+                       aria-label="1 sur 3 : Atelier Dalgona">
+                <div class="slide-visual" aria-hidden="true" style="background:linear-gradient(135deg,#2b1a10,#8b4513 60%);">☕</div>
+                <div class="slide-body">
+                  <time class="slide-date" datetime="2026-04-12">Samedi 12 Avril 2026 · 14h–17h</time>
+                  <h3 class="slide-title">
+                    <span lang="ko">달고나 커피 워크숍</span>
+                    <span class="slide-title-fr" lang="fr">Atelier Café Dalgona</span>
+                  </h3>
+                  <p class="slide-desc">Apprenez à préparer le café dalgona comme en Corée : fouettage, textures et secrets de la mousse parfaite. Matières premières incluses.</p>
+                  <p class="slide-price">25 € / personne</p>
+                  <a href="#contact" class="btn btn-outline btn-sm" style="margin-top:.5rem;align-self:flex-start;">Réserver ma place</a>
+                </div>
+              </article>
+
+              <!-- Slide 2 -->
+              <article class="carousel-slide"
+                       role="group" aria-roledescription="diapositive"
+                       aria-label="2 sur 3 : Nuit du Cinéma Coréen">
+                <div class="slide-visual" aria-hidden="true" style="background:linear-gradient(135deg,#1a0e08,#3d1e0c 60%);">🎬</div>
+                <div class="slide-body">
+                  <time class="slide-date" datetime="2026-05-10">Dimanche 10 Mai 2026 · 19h–23h</time>
+                  <h3 class="slide-title">
+                    <span lang="ko">한국 영화의 밤</span>
+                    <span class="slide-title-fr" lang="fr">Nuit du Cinéma Coréen</span>
+                  </h3>
+                  <p class="slide-desc">Projection de film coréen sous-titré, boissons maison à prix réduit, discussion ouverte autour de la culture coréenne contemporaine.</p>
+                  <p class="slide-price">Entrée libre</p>
+                  <a href="#contact" class="btn btn-outline btn-sm" style="margin-top:.5rem;align-self:flex-start;">En savoir plus</a>
+                </div>
+              </article>
+
+              <!-- Slide 3 -->
+              <article class="carousel-slide"
+                       role="group" aria-roledescription="diapositive"
+                       aria-label="3 sur 3 : Menu Printemps">
+                <div class="slide-visual" aria-hidden="true" style="background:linear-gradient(135deg,#3d2010,#c97a3a 60%);">🌸</div>
+                <div class="slide-body">
+                  <time class="slide-date" datetime="2026-04-05">Dimanche 5 Avril 2026 · 10h–20h</time>
+                  <h3 class="slide-title">
+                    <span lang="ko">봄 신메뉴 출시</span>
+                    <span class="slide-title-fr" lang="fr">Lancement Menu Printemps</span>
+                  </h3>
+                  <p class="slide-desc">Découvrez en avant-première notre carte printemps : nouvelles boissons à la fleur de cerisier, thé froid Bori Cha et pâtisseries de saison.</p>
+                  <p class="slide-price">Gratuit — dégustations incluses</p>
+                  <a href="#contact" class="btn btn-outline btn-sm" style="margin-top:.5rem;align-self:flex-start;">Je participe</a>
+                </div>
+              </article>
+
+            </div><!-- /carousel-track -->
+          </div><!-- /track-wrap -->
+
+          <div class="carousel-controls">
+            <button class="carousel-btn" id="carousel-prev" aria-label="Événement précédent">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+
+            <div class="carousel-dots" role="tablist" aria-label="Navigation des diapositives">
+              <button class="carousel-dot active" role="tab" aria-selected="true"  aria-label="Aller à la diapositive 1" data-slide="0"></button>
+              <button class="carousel-dot"        role="tab" aria-selected="false" aria-label="Aller à la diapositive 2" data-slide="1"></button>
+              <button class="carousel-dot"        role="tab" aria-selected="false" aria-label="Aller à la diapositive 3" data-slide="2"></button>
+            </div>
+
+            <button class="carousel-btn" id="carousel-next" aria-label="Événement suivant">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+
+        </div><!-- /carousel -->
+      </div>
+    </section>
+
+    <!-- ── Contact ───────────────────────────────────────────── -->
+    <section id="contact" aria-labelledby="contact-title">
+      <div class="container">
+
+        <div class="section-header" data-reveal>
+          <p class="section-tag">연락처 · Venez nous voir</p>
+          <h2 id="contact-title">Contact &amp; Réservation</h2>
+          <p class="subline">Réservation, événement privé, presse — nous vous répondons sous 24h</p>
+        </div>
+
+        <!-- Live menu search -->
+        <div class="search-wrap" data-reveal>
+          <label class="search-label" for="menu-search">
+            Rechercher dans notre menu
+          </label>
+          <div class="search-field">
+            <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+            <input type="search" id="menu-search"
+                   name="menu-search"
+                   placeholder="달고나, matcha, yuzu…"
+                   autocomplete="off"
+                   spellcheck="false"
+                   aria-label="Rechercher un article du menu"
+                   aria-controls="search-results"
+                   aria-autocomplete="list"
+                   aria-expanded="false">
+          </div>
+          <ul id="search-results" role="listbox" aria-label="Résultats de recherche" aria-live="polite"></ul>
+        </div>
+
+        <!-- Main contact grid -->
+        <div class="contact-grid">
+
+          <!-- Contact info -->
+          <div class="contact-info" data-reveal>
+
+            <div class="info-block">
+              <h3>Adresse</h3>
+              <address>
+                12 rue des Rosiers<br>
+                75004 Paris, France<br>
+                <em style="font-size:.84rem;color:var(--c-text-3);">Métro Saint-Paul — Ligne 1</em>
+              </address>
+            </div>
+
+            <div class="info-block">
+              <h3>Horaires d'ouverture</h3>
+              <table class="hours-table" aria-label="Horaires">
+                <caption class="sr-only">Horaires d'ouverture de Hanok Coffee</caption>
+                <tbody>
+                  <tr><td>Lundi – Vendredi</td><td>8h – 19h</td></tr>
+                  <tr><td>Samedi</td>          <td>9h – 20h</td></tr>
+                  <tr><td>Dimanche</td>        <td>10h – 18h</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="info-block">
+              <h3>Contact direct</h3>
+              <p>
+                <a href="mailto:bonjour@hanokcoffee.fr">bonjour@hanokcoffee.fr</a><br>
+                <a href="tel:+33140000000">+33 1 40 00 00 00</a>
+              </p>
+            </div>
+
+            <!-- Map placeholder — swap for <iframe> embed -->
+            <div class="map-placeholder" role="img" aria-label="Carte : 12 rue des Rosiers, Paris 75004">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                <circle cx="12" cy="9" r="2.5"/>
+              </svg>
+              <strong style="color:var(--c-text-2);">12 rue des Rosiers, 75004 Paris</strong>
+              <small>Métro Saint-Paul · Ligne 1</small>
+            </div>
+
+          </div>
+
+          <!-- Contact form -->
+          <div data-reveal>
+            <form id="contact-form" action="#" method="post" novalidate
+                  aria-label="Formulaire de contact et de réservation"
+                  data-state="idle">
+
+              <div class="form-stack">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="f-name">Nom<span class="req" aria-hidden="true">*</span><span class="sr-only"> (requis)</span></label>
+                    <input type="text" id="f-name" name="name"
+                           autocomplete="name" required
+                           aria-required="true"
+                           aria-invalid="false"
+                           aria-describedby="e-name">
+                    <span class="form-error" id="e-name" role="alert"></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="f-email">E-mail<span class="req" aria-hidden="true">*</span><span class="sr-only"> (requis)</span></label>
+                    <input type="email" id="f-email" name="email"
+                           autocomplete="email" required
+                           aria-required="true"
+                           aria-invalid="false"
+                           aria-describedby="e-email">
+                    <span class="form-error" id="e-email" role="alert"></span>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="f-subject">Objet de la demande</label>
+                  <select id="f-subject" name="subject">
+                    <option value="">— Choisir —</option>
+                    <option value="reservation">Réservation de table</option>
+                    <option value="event">Événement privé</option>
+                    <option value="atelier">Atelier / Workshop</option>
+                    <option value="press">Presse &amp; médias</option>
+                    <option value="other">Autre</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="f-message">Message<span class="req" aria-hidden="true">*</span><span class="sr-only"> (requis)</span></label>
+                  <textarea id="f-message" name="message" rows="5"
+                            required
+                            aria-required="true"
+                            aria-invalid="false"
+                            aria-describedby="e-message"
+                            placeholder="Réservation, question, événement privé…"></textarea>
+                  <span class="form-error" id="e-message" role="alert"></span>
+                </div>
+
+                <div>
+                  <button type="submit" class="btn btn-primary" id="form-submit">
+                    Envoyer le message
+                  </button>
+                </div>
+
+                <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+              </div>
+
+            </form>
+          </div>
+
+        </div><!-- /contact-grid -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ────────────────────────────────────────────── -->
+  <footer role="contentinfo">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+          <p class="footer-logo" lang="ko">한옥<span> 커피</span></p>
+          <p class="footer-tagline">Café coréen de spécialité · Paris Marais depuis 2024. Ouvert 7j/7.</p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="#about">Notre histoire</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Galerie</a></li>
+            <li><a href="#events">Événements</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Réseaux</h3>
+          <ul>
+            <li><a href="https://instagram.com/hanokcoffee" rel="noopener" target="_blank" aria-label="Instagram Hanok Coffee (nouvel onglet)">Instagram</a></li>
+            <li><a href="https://facebook.com/hanokcoffee" rel="noopener" target="_blank" aria-label="Facebook Hanok Coffee (nouvel onglet)">Facebook</a></li>
+            <li><a href="#" aria-label="TikTok Hanok Coffee">TikTok</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Horaires rapides</h3>
+          <ul style="color:rgba(253,252,249,.5);font-size:.82rem;gap:.3rem;">
+            <li>Lun–Ven · 8h–19h</li>
+            <li>Samedi · 9h–20h</li>
+            <li>Dimanche · 10h–18h</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2024 Hanok Coffee — Tous droits réservés · 12 rue des Rosiers, 75004 Paris</p>
+        <nav aria-label="Liens légaux">
+          <ul class="footer-legal">
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Confidentialité</a></li>
+            <li><a href="#">Plan du site</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ── Fox mascot ─────────────────────────────────────────── -->
+  <div id="fox-wrapper" aria-hidden="true" role="presentation" focusable="false">
+    <svg id="fox-mascot"
+         xmlns="http://www.w3.org/2000/svg"
+         viewBox="0 0 100 100"
+         width="100" height="100"
+         aria-hidden="true"
+         focusable="false">
+
+      <!-- Queue / Tail -->
+      <path d="M64,74 C80,62 100,72 96,86 C92,98 77,96 68,88 C61,82 61,76 64,74Z"
+            fill="#FF6B35"/>
+      <path d="M80,82 C90,76 97,82 95,89 C93,95 85,93 80,89Z"
+            fill="#EDE4E0"/>
+
+      <!-- Corps / Body -->
+      <ellipse cx="47" cy="83" rx="20" ry="12" fill="#FF6B35"/>
+      <ellipse cx="47" cy="85" rx="12" ry="8"  fill="#EDE4E0"/>
+
+      <!-- Oreille gauche / Left ear -->
+      <polygon points="28,32 20,6 42,24"  fill="#FF6B35"/>
+      <polygon points="30,29 24,11 40,23" fill="#FFB8A0"/>
+
+      <!-- Oreille droite / Right ear -->
+      <polygon points="72,32 80,6 58,24"  fill="#FF6B35"/>
+      <polygon points="70,29 76,11 60,23" fill="#FFB8A0"/>
+
+      <!-- Tête / Head -->
+      <circle cx="50" cy="42" r="24" fill="#FF6B35"/>
+
+      <!-- Museau / Muzzle -->
+      <ellipse cx="50" cy="52" rx="15" ry="11" fill="#EDE4E0"/>
+
+      <!-- Joues / Cheeks -->
+      <circle cx="31" cy="47" r="6" fill="#FF8C5A" opacity="0.38"/>
+      <circle cx="69" cy="47" r="6" fill="#FF8C5A" opacity="0.38"/>
+
+      <!-- Oeil gauche / Left eye -->
+      <circle cx="40" cy="38" r="5.5" fill="#3D2B1F"/>
+      <circle cx="41.8" cy="36.5" r="2.1" fill="#FDFCF9"/>
+
+      <!-- Oeil droit / Right eye -->
+      <circle cx="60" cy="38" r="5.5" fill="#3D2B1F"/>
+      <circle cx="61.8" cy="36.5" r="2.1" fill="#FDFCF9"/>
+
+      <!-- Nez / Nose -->
+      <ellipse cx="50" cy="48" rx="3.5" ry="2.7" fill="#3D2B1F"/>
+
+      <!-- Bouche / Mouth -->
+      <path d="M44,53.5 Q50,59 56,53.5"
+            stroke="#3D2B1F" stroke-width="2"
+            fill="none" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
