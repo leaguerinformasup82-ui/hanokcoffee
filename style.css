@@ -343,6 +343,20 @@ section { padding: var(--sp-6) 0; }
   color: var(--c-white);
   letter-spacing: -.025em;
   line-height: 1.06;
+  display: flex;
+  flex-direction: column;
+}
+.hero-h1-ko {
+  display: block;
+}
+.hero-h1-fr {
+  display: block;
+  font-size: .42em;
+  font-weight: 400;
+  font-family: var(--font-body);
+  letter-spacing: .05em;
+  color: var(--c-gold);
+  margin-top: var(--sp-1);
 }
 .hero-h1 em {
   display: block;
